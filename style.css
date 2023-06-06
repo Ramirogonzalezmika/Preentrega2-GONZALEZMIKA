@@ -1,0 +1,142 @@
+*{MARGIN: 0; PADDING: 0;font-family: 'Bebas Neue';}
+
+.contenedorheader{
+    background-color: #F1EDEE;
+    border-bottom: 3px solid gray;
+    height: 10vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.titulo{
+    border: 3px solid gray;
+    background-color:#F1EDEE;
+    text-align: center;
+    margin: 10px;
+}
+.articulo{
+    height: 50vh;
+    border: 3px solid gray;
+    background-color: #F1EDEE;
+    text-align: center;
+    margin: 30px;
+    display: grid;
+    grid-template-areas:
+    "subtitulo fotohome"
+    "textoarticulo fotohome";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 11fr;
+    
+}
+.subtitulo{
+    text-align:start;
+    grid-area: subtitulo;
+    align-self: end;
+    margin-left: 10px;
+}
+.textoarticulo{
+    text-align: start;
+    grid-area: textoarticulo;
+    justify-self: center;
+    align-self: center;
+    margin-left: 10px;
+}
+.fotohome{
+    width: 700px;
+    height: 480px;
+    grid-area: fotohome;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F1EDEE;
+    border-top: 3px solid gray;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+@media (max-width: 480px){
+    *{MARGIN: 0; PADDING: 0;font-family: 'Bebas Neue';}
+
+    .contenedorheader{
+        background-color: #F1EDEE;
+        border-bottom: 3px solid gray;
+        height: 10vh;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .titulo{
+        border: 3px solid gray;
+        background-color:#F1EDEE;
+        text-align: center;
+        margin: 10px;
+    }
+    .articulo{
+        height: 500px;
+        border: 3px solid gray;
+        background-color: #F1EDEE;
+        text-align: center;
+        margin: 30px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-areas:
+        "subtitulo fotohome"
+        "textoarticulo fotohome";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100px 11fr;
+        
+    }
+    .subtitulo{
+        text-align:start;
+        grid-area: subtitulo;
+        align-self: end;
+        margin-left: 10px;
+    }
+    .textoarticulo{
+        text-align: start;
+        grid-area: textoarticulo;
+        justify-self: center;
+        align-self: center;
+        margin-left: 10px;
+    }
+    .fotohome{
+        width: 700px;
+        height: 480px;
+        grid-area: fotohome;
+        display: none;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #F1EDEE;
+        border-top: 3px solid gray;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 35px;
+    } 
+}
+
+
